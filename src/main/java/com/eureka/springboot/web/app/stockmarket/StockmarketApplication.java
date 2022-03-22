@@ -1,4 +1,4 @@
-package com.eureka.springboot.web.app;
+package com.eureka.springboot.web.app.stockmarket;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
