@@ -61,7 +61,7 @@ Versioned with git
 
 + mvn spring-boot:run
 
-+Clone the project from github https://github.com/felucchesi85/eureka
++Clone the project from github https://github.com/felucchesi85/eurekaChallenge
 Download the code or clone from git IDE: File/Open : Repo once the ide recognized the maven project. find the
 EurekaApplication class and give it Run.
 
