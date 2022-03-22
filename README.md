@@ -66,7 +66,17 @@ Download the code or clone from git IDE: File/Open : Repo once the ide recognize
 EurekaApplication class and give it Run.
 
 +From Spring Tool :
-Clone the project to a local IDE repo : File/Open Projects from file System/Directory : find the repo that recognizes the
+Clone the project to a local IDE repo :
+
++Import 
++Maven Existing Maven Projects
++Root Directory: path
++ When recognize the right pom.xml
++ Next 
++ Finish 
++ Run as Spring Boot App
+
+File/Open Projects from file System/Directory : find the repo that recognizes the
 IDE the project as an Eclipse Projects/Finish If necessary on the Maven Update Projects project to
 update dependencies In application properties you can modify the port if necessary About the project /Run
 As /Spring Boot App: to run the spring boot project
