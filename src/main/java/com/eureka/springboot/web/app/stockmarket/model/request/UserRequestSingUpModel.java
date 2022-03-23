@@ -2,18 +2,18 @@ package com.eureka.springboot.web.app.stockmarket.model.request;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 import lombok.Data;
 
 @Data
 public class UserRequestSingUpModel {
 	
-	@NotEmpty
 	private String firstName;
-	@NotEmpty
+	
 	private String lastName;
-	@NotEmpty
-	@Email(regexp = ".+[@].+[\\.].+")
+
+	@Email(message = "Email must be a valid email address")
 	private String email;
 
 }

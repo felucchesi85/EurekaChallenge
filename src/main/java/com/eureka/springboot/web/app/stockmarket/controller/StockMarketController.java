@@ -1,6 +1,7 @@
 package com.eureka.springboot.web.app.stockmarket.controller;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,7 +22,6 @@ import com.eureka.springboot.web.app.stockmarket.service.StockMarketService;
 
 @RestController
 @RequestMapping("/stockmarket")
-@Validated
 public class StockMarketController {
 	
 	private final Logger logger = LoggerFactory.getLogger(StockMarketController.class);
@@ -30,7 +30,7 @@ public class StockMarketController {
 	private StockMarketService stockMarketService;
 
     @PostMapping("/users/signup")
-    public User signUpUser(HttpServletRequest requestToCache, @RequestBody UserRequestSingUpModel userRequestSingUpModel) throws Exception {
+    public User signUpUser(HttpServletRequest requestToCache,@Valid @RequestBody UserRequestSingUpModel userRequestSingUpModel) throws Exception {
     	logger.info("StockMarketController::signUpUser() method call...".concat(requestToCache.getMethod()).concat("/users/signup"));
         return stockMarketService.signUpUser(userRequestSingUpModel.getFirstName(), userRequestSingUpModel.getLastName(), userRequestSingUpModel.getEmail());
     }
